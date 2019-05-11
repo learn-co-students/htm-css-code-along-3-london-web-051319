@@ -1,0 +1,29 @@
+/*this is a stylesheet for our site*/
+
+@import url('https://fonts.googleapis.com/css?family=Stylish');
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: 'Stylish', sans-serif;
+}
+
+figcaption {
+	/*font-weight: normal;
+	font-size: 0.75em;
+	font-family: Georgia, "New Times Roman", serif;*/
+	font: normal 0.75em/1.5em Georgia, "New Times Roman", serif;
+	color: #00083a;
+	text-align: right;
+}
+
+#details a:link, #details a:visited {
+	color: red;
+	text-decoration: none;
+}
+
+#details a:hover. #details a:active {
+	color: green;
+	text-decoration: none;
+}
+
