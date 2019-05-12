@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script|Elsie+Swash+Caps');
+
+
+/* This is a CSS style sheet!!! */
+
+/* CSS Syntax:
+
+Selector:
+selector {
+   property:1 value1;
+   property2: value2;
+   property3: value3;
+}
+
+Type selector:  */
+p { /* selects all paragraph tags */
+   font-size: 16px; /* 16px is the default for most browsers and pixels are the same in all browsers. You can also use pt but the value of 12pt in one browser may be different in another so best to go with px. You could also use ems if you want to 1em == 16px. */
+   line-height: 1.5em; /* This is one and a half times the size of the font */
+}
+
+figcaption {
+   font-weight: normal;
+   font-size: 0.75em;
+   line-height:1.5em;
+   /* font-family: Georgia, "Times New Roman", serif; Georgia is the preferred font, and TNR and serif are backups */
+   /* font-family: 'Elsie Swash Caps', cursive; */
+   font-family: 'Clicker Script', cursive;
+   color: #BB3120;
+   text-align: right; 
+}
+/* We could actually simplify the above with shorthand font code 
+figcaption{
+   font: normal 0.75em/1.5em Georgia, "Times New Roman", serif; 
+}  */
+
+.milkytext { /* will select fonts with class="milkytext" */
+font: bold 2.6em "Elsie Swash Caps", cursive;
+color: white;
+text-shadow: 0 2px 3px #000000;
+}
+
+/* ID Selector – Can only appy to one element per page*/
+#logo { /*will only select elements with id="logo"*/
+   background: teal;
+}
+
+#logo h1 { /* will only style h1s which occur inside an element with id="logo" */
+   font-family: "Clicker Script", cursive;
+}
+
+#logo h2 { /* will only style h2s which occur inside an element with id="logo" */
+   font-family: "Elsie Swash Caps", cursive;
+}
+
+/* Pseudo Class Selectors
+For this we'll style just the links at the end of the page
+*/
+
+#details a:link, #details a:visited {
+   color: black;
+   text-decoration: none;
+}
+
+#details a:hover {
+   color: pink;
+   text-decoration: underline;
+}
+
+#details a:active {
+   color: red;
+}
